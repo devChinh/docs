@@ -1,0 +1,26 @@
+div {
+    width: 80px;
+    height: auto;
+    background-color: red;
+    margin-left: 100px;
+    text-align: center;
+    position: relative;
+}
+
+div:hover ul {
+    display: block;
+}
+
+ul {
+    position: absolute;
+    background-color: green;
+    display: none;
+}
+
+div::before {
+    content: "";
+    width: 70px;
+    height: 15px;
+    position: absolute;
+    top: 110%;
+}
